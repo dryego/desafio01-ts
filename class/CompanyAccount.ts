@@ -12,9 +12,10 @@ export class CompanyAccount extends DioAccount {
 
   setLoan = (loanValue: number): string => {
     if (this.getStatus() && loanValue > 0) {
-      this.balance += loanValue;
+      this.setBalance(this.getBalance() + loanValue);
       this.loan += loanValue;
+      return "Voce pegou um empréstimo";
     }
-    return "Voce pegou um empréstimo";
+    return "Valor invalido";
   };
 }
