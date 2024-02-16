@@ -22,3 +22,7 @@ console.log(companyAccount.getLoan());
 console.log(peopleAccount);
 console.log(companyAccount);
 console.log(promotionalAccount);
+
+console.log(peopleAccount.getAccountNumber);
+console.log(peopleAccount.getName);
+console.log(peopleAccount.deposit(300));
